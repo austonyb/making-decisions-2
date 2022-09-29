@@ -17,6 +17,9 @@ let firstItem = arr[0]
 */
 
 //Code Here
+let lastItemRemoved = arr.pop()
+
+console.log(lastItemRemoved)
 
 ////////// PROBLEM 3 //////////
 
@@ -28,14 +31,18 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
   Loop through the 'family' array and console.log every item.
 */
 
+
 //Code Here
 
+for (i = 0; i < family.length; i++){
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+let nums = [1,2,3,6,22,98,45,23,22,12];
 let evensArr = []
 // Do not edit the code above.
 
@@ -45,6 +52,13 @@ let evensArr = []
 
 //Code Here
 
+for (i = 0; i < nums.length; i++){
+  if(nums[i] % 2 === 0){
+    evensArr.push(nums[i])
+  }
+}
+
+console.log(evensArr)
 
 
 ////////// PROBLEM 5 //////////
@@ -59,6 +73,17 @@ var score = 74
 
 //Code Here
 
+if (score >= 90){
+  console.log("You scored a A")
+} else if (score < 90 && score >= 80){
+  console.log("You scored a B")
+} else if (score < 80 && score >= 70){
+  console.log("You scored a You scored a C")
+} else if (score < 70 && score >= 60){
+  console.log("You scored a D")
+} else {
+  console.log("You failed, you scored an F")
+}
 
 ////////// Intermediate Problems //////////
 
@@ -74,6 +99,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 
 //Code Here
 
+let someNum = myFavoriteNumbers[6]
 
 ////////// PROBLEM 7 //////////
 
