@@ -124,6 +124,8 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
+console.log("Problem 8 below.")
+
 for (i = 0; i < listOfNumbers.length; i++){
   if(listOfNumbers[i] % 3 === 0){
     console.log(`${listOfNumbers[i]} is divisible by 3.`)
@@ -227,3 +229,12 @@ for (i = 1; i <= 100; i++){
     console.log(i);
   }
 }
+
+
+//Messing Around with the .map method 
+
+let austonsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let map1 = austonsArray.map((x, i) => x * (austonsArray[i]+1));
+
+console.log(map1);
